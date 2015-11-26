@@ -15,8 +15,12 @@ public:
   bool readFile(const char* filename) {
     FILE* f = NULL;
     bool result = false;
-    while ((f = fopen(filename, "rb")) != NULL) {
-      unsigned char header[18];
+#ifdef _MSC_VER
+    while (fopen_s(&f, filename, "rb") == 0) {
+#else
+        while ((f = fopen(filename, "rb")) != NULL) {
+#endif
+            unsigned char header[18];
       if (fread(header, sizeof header, 1, f) != 1) break;
       unsigned char expected[18] = {
         0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,24,0
@@ -62,8 +66,12 @@ public:
     };
     FILE* f = NULL;
     bool result = false;
-    if ((f = fopen(filename, "wb")) != NULL) {
-      fwrite(header, 18, 1, f);
+#ifdef _MSC_VER
+    if (fopen_s(&f,filename, "wb")== 0 ) {
+#else
+        if ((f = fopen(filename, "wb")) != NULL) {
+#endif
+            fwrite(header, 18, 1, f);
       fwrite(data_, 3, width_*height_, f);
       result = true;
     }

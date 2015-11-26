@@ -21,6 +21,15 @@
 #include <winsock2.h>
 #include <CommDlg.h>
 
+#if _MSC_VER > 1700
+// http://stackoverflow.com/questions/30412951/unresolved-external-symbol-imp-fprintf-and-imp-iob-func-sdl2
+FILE _iob[] = { *stdin, *stdout, *stderr };
+
+extern "C" FILE * __cdecl __iob_func(void)
+{
+    return _iob;
+}
+#endif
 #pragma warning(disable: 4996) // unsafe function
 #pragma warning(disable: 4244) // double / float conversion
 #pragma warning(disable: 4305) // double / float truncation

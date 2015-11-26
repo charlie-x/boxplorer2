@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{69D71E2A-6D70-42F5-B093-B80D6522037D}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>boxplorer2</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>..\..\OculusSDK4/LibOVR/Include;..\..\SDL2/include;..\..\include;..\..\AntTweakBar/include;..\..\AntTweakBar/src;..\..\sixense;/WinDDK/7600.16385.1/inc/atl71;..\..\OculusSDK4\LibOVRKernel\Src\;$(IncludePath)</IncludePath>
+    <LibraryPath>..\..\SDL2/lib/x86;..\..\OculusSDK4\LibOVR\Lib\Windows\Win32\Release\VS2013\;..\..\sixense;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>..\..\OculusSDK4/LibOVR/Include;..\..\SDL2/include;..\..\include;..\..\AntTweakBar/include;..\..\AntTweakBar/src;..\..\sixense;/WinDDK/7600.16385.1/inc/atl71;..\..\OculusSDK4\LibOVRKernel\Src\;$(IncludePath)</IncludePath>
+    <LibraryPath>..\..\SDL2/lib/x64;..\..\OculusSDK4\LibOVR\Lib\Windows\x64\Release\VS2013\;..\..\sixense;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>..\..\OculusSDK4/LibOVR/Include;..\..\SDL2/include;..\..\include;..\..\AntTweakBar/include;..\..\AntTweakBar/src;..\..\sixense;/WinDDK/7600.16385.1/inc/atl71;..\..\OculusSDK4\LibOVRKernel\Src\;$(IncludePath)</IncludePath>
+    <LibraryPath>..\..\SDL2/lib/x86;..\..\OculusSDK4\LibOVR\Lib\Windows\Win32\Release\VS2013\;..\..\sixense;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>..\..\OculusSDK4/LibOVR/Include;..\..\SDL2/include;..\..\include;..\..\AntTweakBar/include;..\..\AntTweakBar/src;..\..\sixense;/WinDDK/7600.16385.1/inc/atl71;..\..\OculusSDK4\LibOVRKernel\Src\;$(IncludePath)</IncludePath>
+    <LibraryPath>..\..\SDL2/lib/x64;..\..\OculusSDK4\LibOVR\Lib\Windows\x64\Release\VS2013\;..\..\sixense;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions);TW_NO_LIB_PRAGMA;TW_STATIC /DHYDRAX;ANT_DEBUG;_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS;TW_NO_LIB_PRAGMA;TW_STATIC;HYDRAX;ANT_DEBUG</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>msvcrt.lib;msvcrtd.lib</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions);TW_NO_LIB_PRAGMA;TW_STATIC /DHYDRAX;ANT_DEBUG;_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS;TW_NO_LIB_PRAGMA;TW_STATIC;HYDRAX;ANT_DEBUG</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>msvcrt.lib msvcrtd.lib</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions);TW_NO_LIB_PRAGMA;TW_STATIC /DHYDRAX;ANT_DEBUG;_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS;TW_NO_LIB_PRAGMA;TW_STATIC;HYDRAX;ANT_DEBUG</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <IgnoreSpecificDefaultLibraries>msvcrt.lib</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions);TW_NO_LIB_PRAGMA;TW_STATIC /DHYDRAX;ANT_DEBUG;_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS;TW_NO_LIB_PRAGMA;TW_STATIC;HYDRAX;ANT_DEBUG</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <IgnoreSpecificDefaultLibraries>msvcrt.lib;msvcrtd.lib</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\camera.h" />
+    <ClInclude Include="..\..\default_shaders.h" />
+    <ClInclude Include="..\..\glsl.h" />
+    <ClInclude Include="..\..\interpolate.h" />
+    <ClInclude Include="..\..\oculus_sdk4.h" />
+    <ClInclude Include="..\..\params.h" />
+    <ClInclude Include="..\..\shader.h" />
+    <ClInclude Include="..\..\shadershrink.h" />
+    <ClInclude Include="..\..\shader_procs.h" />
+    <ClInclude Include="..\..\TGA.h" />
+    <ClInclude Include="..\..\uniforms.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\AntTweakBar\src\LoadOGL.cpp" />
+    <ClCompile Include="..\..\AntTweakBar\src\LoadOGLCore.cpp" />
+    <ClCompile Include="..\..\AntTweakBar\src\TwBar.cpp" />
+    <ClCompile Include="..\..\AntTweakBar\src\TwColors.cpp" />
+    <ClCompile Include="..\..\AntTweakBar\src\TwEventSDL.c" />
+    <ClCompile Include="..\..\AntTweakBar\src\TwEventSDL12.c" />
+    <ClCompile Include="..\..\AntTweakBar\src\TwEventSDL13.c" />
+    <ClCompile Include="..\..\AntTweakBar\src\TwEventSDL20.c" />
+    <ClCompile Include="..\..\AntTweakBar\src\TwFonts.cpp" />
+    <ClCompile Include="..\..\AntTweakBar\src\TwMgr.cpp" />
+    <ClCompile Include="..\..\AntTweakBar\src\TwOpenGL.cpp" />
+    <ClCompile Include="..\..\AntTweakBar\src\TwOpenGLCore.cpp" />
+    <ClCompile Include="..\..\AntTweakBar\src\TwPrecomp.cpp" />
+    <ClCompile Include="..\..\boxplorer2.cc" />
+    <ClCompile Include="..\..\camera.cc" />
+    <ClCompile Include="..\..\interpolate.cc" />
+    <ClCompile Include="..\..\oculus_sdk4.cc" />
+    <ClCompile Include="..\..\shader.cc" />
+    <ClCompile Include="..\..\uniforms.cc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

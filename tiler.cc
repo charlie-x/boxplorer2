@@ -28,7 +28,7 @@ int main(int argc, char* argv[]) {
   TGA output(input.width() * 2, input.height() * 2);
 
   for (size_t x = 0; x < input.width(); ++x) {
-    for (size_t y = 0; y < input.width(); ++y) {
+    for (int y = 0; y < input.width(); ++y) {
       for (size_t c = 0; c < 3; ++c) {
         unsigned v = input.data()[x * 3 + c + y * input.width() * 3];
         // 0,0

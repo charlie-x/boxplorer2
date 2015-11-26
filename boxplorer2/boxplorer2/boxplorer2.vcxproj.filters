@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\header">
+      <UniqueIdentifier>{ad198b4f-bc2b-4cc6-ad22-6302ce4d3b49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AntToolBar">
+      <UniqueIdentifier>{c99bf359-8bc4-4c12-a2a6-4f2571ec5723}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\camera.h">
+      <Filter>Source Files\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\default_shaders.h">
+      <Filter>Source Files\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\glsl.h">
+      <Filter>Source Files\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\interpolate.h">
+      <Filter>Source Files\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\oculus_sdk4.h">
+      <Filter>Source Files\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\params.h">
+      <Filter>Source Files\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\shader.h">
+      <Filter>Source Files\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\shader_procs.h">
+      <Filter>Source Files\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\TGA.h">
+      <Filter>Source Files\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\uniforms.h">
+      <Filter>Source Files\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\shadershrink.h">
+      <Filter>Source Files\header</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\boxplorer2.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\camera.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\interpolate.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\shader.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\uniforms.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\oculus_sdk4.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\AntTweakBar\src\TwEventSDL.c">
+      <Filter>Source Files\AntToolBar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\AntTweakBar\src\TwEventSDL12.c">
+      <Filter>Source Files\AntToolBar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\AntTweakBar\src\TwEventSDL13.c">
+      <Filter>Source Files\AntToolBar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\AntTweakBar\src\TwEventSDL20.c">
+      <Filter>Source Files\AntToolBar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\AntTweakBar\src\LoadOGL.cpp">
+      <Filter>Source Files\AntToolBar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\AntTweakBar\src\LoadOGLCore.cpp">
+      <Filter>Source Files\AntToolBar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\AntTweakBar\src\TwBar.cpp">
+      <Filter>Source Files\AntToolBar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\AntTweakBar\src\TwColors.cpp">
+      <Filter>Source Files\AntToolBar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\AntTweakBar\src\TwFonts.cpp">
+      <Filter>Source Files\AntToolBar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\AntTweakBar\src\TwMgr.cpp">
+      <Filter>Source Files\AntToolBar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\AntTweakBar\src\TwOpenGL.cpp">
+      <Filter>Source Files\AntToolBar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\AntTweakBar\src\TwOpenGLCore.cpp">
+      <Filter>Source Files\AntToolBar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\AntTweakBar\src\TwPrecomp.cpp">
+      <Filter>Source Files\AntToolBar</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

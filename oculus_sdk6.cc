@@ -19,8 +19,8 @@
 static ovrHmd hmd = NULL;
 
 int InitOculusSDK() {
-  ovr_Initialize(nullptr);
-  ovrResult  result = ovrHmd_Create(0, &hmd);
+  ovr_Initialize();
+  hmd = ovrHmd_Create(0);
 
   if (!hmd) {
     return 0;
