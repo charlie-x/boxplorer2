@@ -8,7 +8,7 @@ all: boxplorer2.exe shadershrink.exe edit-cfg.exe glsl.exe sdl2-test.exe
 
 CFLAGS=/nologo /IOculusSDK4/LibOVR/Include /ISDL2/include /Iinclude /IAntTweakBar/include /IAntTweakBar/src /Isixense /I/WinDDK/7600.16385.1/inc/atl71 /MD /D_CONSOLE /DWIN32 /Gm- /EHsc /GS /W3 /WX- /Ox /DTW_NO_LIB_PRAGMA /DTW_STATIC /DHYDRAX /DANT_DEBUG
 
-LDFLAGS=/link /LIBPATH:SDL2/lib/x86 /LIBPATH:OculusSDK4/LibOVR/Lib/Win32/VS2010 /LIBPATH:sixense /LIBPATH:/WinDDK/7600.16385.1/lib/ATL/i386 /SUBSYSTEM:console /nologo
+LDFLAGS=/link /LIBPATH:SDL2/lib/x86 /LIBPATH:OculusSDK4/LibOVR/Lib/Windows\Win32/Release\VS2013 /LIBPATH:sixense /LIBPATH:/WinDDK/7600.16385.1/lib/ATL/i386 /SUBSYSTEM:console /nologo
 
 TW_OBJS=TwBar.obj TwFonts.obj TwMgr.obj TwColors.obj TwOpenGL.obj \
         TwPrecomp.obj LoadOGL.obj \
