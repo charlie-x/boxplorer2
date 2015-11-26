@@ -78,6 +78,7 @@
     <LinkIncremental>true</LinkIncremental>
     <IncludePath>..\..\OculusSDK4/LibOVR/Include;..\..\SDL2/include;..\..\include;..\..\AntTweakBar/include;..\..\AntTweakBar/src;..\..\sixense;/WinDDK/7600.16385.1/inc/atl71;..\..\OculusSDK4\LibOVRKernel\Src\;$(IncludePath)</IncludePath>
     <LibraryPath>..\..\SDL2/lib/x64;..\..\OculusSDK4\LibOVR\Lib\Windows\x64\Release\VS2013\;..\..\sixense;$(LibraryPath)</LibraryPath>
+    <TargetName>$(ProjectName)d_x64</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -88,6 +89,7 @@
     <LinkIncremental>false</LinkIncremental>
     <IncludePath>..\..\OculusSDK4/LibOVR/Include;..\..\SDL2/include;..\..\include;..\..\AntTweakBar/include;..\..\AntTweakBar/src;..\..\sixense;/WinDDK/7600.16385.1/inc/atl71;..\..\OculusSDK4\LibOVRKernel\Src\;$(IncludePath)</IncludePath>
     <LibraryPath>..\..\SDL2/lib/x64;..\..\OculusSDK4\LibOVR\Lib\Windows\x64\Release\VS2013\;..\..\sixense;$(LibraryPath)</LibraryPath>
+    <TargetName>$(ProjectName)_x64</TargetName>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
